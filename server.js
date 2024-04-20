@@ -2,10 +2,9 @@ const cors = require("cors");
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
-const serverlessHttp = require("serverless-http");
 
 const app = express();
-const router = Router();
+
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -44,4 +43,4 @@ app.post("/basic-timeline-data", (req, res) => {
     });
 });
 
-app.listen(5000, () => console.log("server running"));
+app.listen(5001, () => console.log("server running"));
